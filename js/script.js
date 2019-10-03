@@ -12,6 +12,11 @@ window.onload = function(){
     let home = document.getElementById("home");
     home.onclick = show_image;
 
+    let batton_menu_mob = document.getElementsByClassName('batton_menu_mob');
+    for (let batton of batton_menu_mob) {
+        batton.onclick = show_image;;
+    }
+
 
     function hide_imege(){
         event.stopPropagation(); 
@@ -94,4 +99,6 @@ window.onload = function(){
             content.classList.remove("content_activ");
         }
     }
+
+
 }
